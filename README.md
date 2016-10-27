@@ -12,6 +12,11 @@ cf v3-bind-service flyway-migration demo-db
 cf v3-run-task flyway-migration migrate ".java-buildpack/open_jdk_jre/bin/java org.springframework.boot.loader.JarLauncher"
 ```
 
+Tested with
+
+* Pivotal Cloud Foundry: 1.8
+* CC API Version: 2.58.0
+
 ## Run Task
 
 Run task 1st
