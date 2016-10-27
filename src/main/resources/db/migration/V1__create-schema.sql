@@ -1,0 +1,4 @@
+CREATE TABLE demo (
+  id      INTEGER PRIMARY KEY AUTO_INCREMENT,
+  message VARCHAR(32)
+)
