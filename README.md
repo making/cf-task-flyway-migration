@@ -5,7 +5,6 @@ Run Flyway migration as a short lived task
 ```
 cf install-plugin https://github.com/cloudfoundry/v3-cli-plugin/releases/download/0.6.5/v3-cli-plugin.osx
 ./mvnw clean package -DskipTests=true
-jar -uvf target/flyway-migration-0.0.1-SNAPSHOT.jar Procfile 
 cf v3-push flyway-migration -b java_buildpack_offline -p target/flyway-migration-0.0.1-SNAPSHOT.jar
 cf create-service p-mysql 100mb demo-db
 cf v3-bind-service flyway-migration demo-db 
